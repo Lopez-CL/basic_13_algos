@@ -41,7 +41,7 @@ function printArrayVals(arr){
 }
 
 console.log(printArrayVals([1, 2, 3, 5, 23, 20, -2, 4, 5]));
-
+//algo 5 didn't make it//
 function printMaxOfArray(arr){
     var max = 0;
     for (var i = 0; i < arr.length; i++){
@@ -64,3 +64,27 @@ function printAverageOfArray(arr){
     return Math.round(sum);
 }
 console.log(printAverageOfArray([1, 2, 3, 5, 23, 20, 2, 4, 5]));
+
+//algo 7 didn't make it//
+
+function printOdds1To255(){
+    var arr = [];
+    for (var i = 1; i < 256; i++){
+        if (i % 2 != 0){
+            arr.push(i);
+        }
+    }
+    return arr;
+}
+console.log(printOdds1To255());
+
+//algo 8//
+
+function rsquareArrayVals(arr){
+    var sqdArr = [];
+    for (var i = 0; i < arr.length; i++){
+        sqdArr.push(arr[i] ** 2);
+    }
+    return sqdArr;
+}
+console.log(rsquareArrayVals([1,2,3,4,5,6]));

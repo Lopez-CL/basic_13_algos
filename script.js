@@ -88,3 +88,46 @@ function rsquareArrayVals(arr){
     return sqdArr;
 }
 console.log(rsquareArrayVals([1,2,3,4,5,6]));
+
+//algo 9//
+function printArrayCountGreaterThanY(arr, y){
+    for (var i = 0; i < arr.length; i++){
+        if (arr[i] > y){
+            console.log(arr[i]);
+        }
+    }
+}
+console.log(printArrayCountGreaterThanY([1,2,3,4,5,6,7], 3));
+
+//algo 10//
+function zeroOutArrayNegativeVals(arr){
+    for (var i = 0; i < arr.length; i++){
+        if (arr[i] < 0){
+            arr[i] = 0;
+        }
+    }
+    return arr;
+}
+
+console.log(zeroOutArrayNegativeVals([1,2,-3,4,-5,6,-7]));
+
+//algo 11//
+function printMaxMinAverageArrayVals(arr){
+    var max = 0;
+    var min = 1;
+    var sum = 0;
+    for (var i = 0; i < arr.length; i++){
+        if (max < arr[i]){
+            max = arr[i];
+        }
+        if (min > arr[i]){
+            min = arr[i];
+        }
+        sum = sum + arr[i];
+    }
+    console.log(max);
+    console.log(min);
+    console.log(sum / arr.length);
+}
+
+console.log(printMaxMinAverageArrayVals([1,2,3,4,5,6,7]));

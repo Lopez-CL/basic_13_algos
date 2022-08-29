@@ -131,3 +131,12 @@ function printMaxMinAverageArrayVals(arr){
 }
 
 console.log(printMaxMinAverageArrayVals([1,2,3,4,5,6,7]));
+
+//algo 12//
+function shiftArrayValsLeft(arr){
+    arr.shift();
+    arr.push(0);
+    return arr;
+}
+
+console.log(shiftArrayValsLeft([1,2,3,4,5,6,7]));

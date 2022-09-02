@@ -140,3 +140,15 @@ function shiftArrayValsLeft(arr){
 }
 
 console.log(shiftArrayValsLeft([1,2,3,4,5,6,7]));
+
+//algo 13//
+function swapStringForArrayNegativeVals(arr){
+    for (var i = 0; i < arr.length; i++){
+    if (arr[i] < 0){
+        arr[i] = 'Dojo'
+    }
+    console.log(arr);
+    }
+}
+
+console.log(swapStringForArrayNegativeVals([1,-2,3,-4,5,-6,7]));
